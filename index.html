@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello...</title>
+</head>
+
+<body>
+	<div id="scalable" style="background-color:green;
+							  display: block;
+							  position: relative;
+							  top: 0px;
+							  margin-top: 0px;
+							  width: 80%;
+							  left: 10%;">
+	</div>
+	<script>
+		var scaleHeight = function(){
+			document.getElementById("scalable").style.height = 0.95*window.innerHeight + "px";
+		};
+		window.onload = scaleHeight;
+		window.onresize = scaleHeight;
+	</script>
+<body>
+
+</html>
